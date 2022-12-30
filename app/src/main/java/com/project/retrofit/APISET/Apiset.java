@@ -14,6 +14,7 @@ public interface Apiset {
 
     @GET("zones/all")
     Call<List<Zone>> getAllZones();
+
     @GET("villes/zones")
     Call<String> getVilleZone(Zone zone);
 
