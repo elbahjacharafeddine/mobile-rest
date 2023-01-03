@@ -38,7 +38,7 @@ public class RestActivity extends AppCompatActivity  implements AdapterView.OnIt
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(RestActivity.this,MainActivity.class));
+                startActivity(new Intent(RestActivity.this,SignInSignUp.class));
             }
         });
 

@@ -16,6 +16,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.project.retrofit.databinding.ActivityMainBinding;
 
+
+//Propriétaire Navigation Drawer Action
 public class MainActivity extends AppCompatActivity {
 
     private AppBarConfiguration mAppBarConfiguration;
