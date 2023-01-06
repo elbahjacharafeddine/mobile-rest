@@ -10,4 +10,6 @@
     <string name="menu_home">Cities</string>
     <string name="menu_gallery">Zones</string>
     <string name="menu_slideshow">More Details</string>
+
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyBwz0ELeXzrfOmPmrbAILbIGm9tUd_oVzE</string>
 </resources>

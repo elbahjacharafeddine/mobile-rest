@@ -21,5 +21,5 @@
 
     <style name="Theme.Retrofit.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
-    <style name="Theme.Retrofit.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="Theme.Retrofit.PopupOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 </resources>

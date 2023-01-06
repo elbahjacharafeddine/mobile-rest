@@ -56,7 +56,7 @@ public class VilleAdapter extends RecyclerView.Adapter<VilleAdapter.ViewHolder> 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
 
-            ville=itemView.findViewById(R.id.nom_ville);
+            ville=itemView.findViewById(R.id.nom_restaurant);
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
