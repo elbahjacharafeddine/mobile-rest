@@ -79,7 +79,7 @@ public class RestActivity extends AppCompatActivity  implements AdapterView.OnIt
                         // do something here
                         return true;
                     case R.id.item3:
-                        startActivity(new Intent(RestActivity.this,MainActivity.class));
+                        startActivity(new Intent(RestActivity.this,SignInActivity.class));
                         return true;
                     default: return true;
                 }

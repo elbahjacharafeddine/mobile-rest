@@ -124,7 +124,7 @@ public class RestaurantAdapter extends RecyclerView.Adapter<RestaurantAdapter.Vi
                         for (Restaurant restaurant : restaurants) {
 
                             // search for user title
-                            if (restaurant.getNom().toLowerCase().contains(searchString) || restaurant.getZone().getNom().toLowerCase().contains(searchString) || restaurant.getZone().getVille().getNom().toLowerCase().contains(searchString) || restaurant.getHeureOpen().toLowerCase().contains(searchString)){
+                            if (restaurant.getNom().toLowerCase().contains(searchString) ||  restaurant.getHeureOpen().toLowerCase().contains(searchString)){
 
                                 tempFilteredList.add(restaurant);
                             }
