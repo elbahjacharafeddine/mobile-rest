@@ -1,19 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
+
     <item
-        android:id="@+id/item2"
+        android:icon="@drawable/ic_baseline_local_library_24"
+        android:id="@+id/item0"
         android:title="servers" />
 
     <item
+        android:icon="@drawable/ic_baseline_map_24"
         android:id="@+id/item1"
-        android:title="search"/>
+        android:title="Map"/>
 
     <item
+
+        android:icon="@drawable/ic_baseline_favorite_24"
+        android:id="@+id/item2"
+        android:title="Favourite" />
+
+    <item
+        android:icon="@drawable/ic_baseline_login_24"
         android:id="@+id/item3"
-        android:title="billing" />
-
-    <item
-        android:id="@+id/item0"
-        android:title="account"/>
+        android:title="login"/>
 </menu>
