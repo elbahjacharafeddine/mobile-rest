@@ -12,16 +12,16 @@ import retrofit2.http.Path;
 
 public interface RestaurantService {
 
-    @GET("lister")
+    @GET("listar")
     Call<List<Restaurant>> getRestaurants();
 
-    @POST("agreger")
-    Call<Restaurant>addRestaurant(@Body Restaurant persona);
+    @POST("agregar")
+    Call<Restaurant>addRestaurant(@Body Restaurant restaurant);
 
-    @POST("actualiser/{id}")
-    Call<Restaurant>updateRestaurant(@Body Restaurant restaurant,@Path("id") int id);
+    @POST("actualizar/{id}")
+    Call<Restaurant>updateRestaurant(@Body Restaurant restaurant, @Path("id") int id);
 
-    @POST("eliminer/{id}")
+    @POST("eliminar/{id}")
     Call<Restaurant>deleteRestaurant(@Path("id")int id);
 
 }

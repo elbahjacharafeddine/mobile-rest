@@ -1,4 +1,4 @@
-package com.project.retrofit.Controller;
+package com.project.retrofit.APISET;
 
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
