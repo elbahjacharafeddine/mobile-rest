@@ -11,11 +11,8 @@ Ce projet a pour but de mettre en place une interface permettant de localiser le
 
 # Mise en place du projet:
 Pour mettre en place ce projet,vous aurez besoin des éléments suivants:
-1. Un serveur d'application Java (comme Tomcat)
-2. Un SGBD (comme MySQL)
-3. Un éditeur de code (android studio)
-4. Le driver JDBC de votre SGBD (à télécharger sur le site officiel de votre SGBD)
-5. Le framework Hibernate (à télécharger sur le site officiel ou via Maven)
+1. Un SGBD (comme MySQL)
+2. Un éditeur de code (android studio)
 
 # Déploiement
 Pour déployer ce projet sur votre machine, suivez les étapes suivantes :
@@ -26,4 +23,3 @@ Ce projet a été réalisé par CharafEddine ELBAHJA/Meryem YOUSFI/Hanae HANIM
 
 Notre projet, peut s'executer sur les derniers versions des navigateurs suivants:
 
-<img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/chrome.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/firefox.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/edge.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/safari.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/opera.png" width="64" height="64">
