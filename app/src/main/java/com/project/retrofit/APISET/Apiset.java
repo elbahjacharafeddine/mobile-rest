@@ -9,6 +9,8 @@ import retrofit2.Call;
 import retrofit2.http.GET;
 
 public interface Apiset {
+
+
     @GET("/villes/all")
     Call<List<Ville>> getAllVilles();
 

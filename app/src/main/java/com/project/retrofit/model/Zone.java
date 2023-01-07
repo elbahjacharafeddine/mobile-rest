@@ -1,46 +1,35 @@
 package com.project.retrofit.model;
 
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
+
 public class Zone {
-    private Long id;
+
+    @SerializedName("id")
+    @Expose
+    private int id;
+
+    @SerializedName("nom")
+    @Expose
     private String nom;
-    private int ville_id;
-   private Ville ville;
 
 
-
-
-    public Zone() {
-    }
-
-    public Long getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(Long id) {
+
+    public void setId(int id) {
         this.id = id;
     }
+
 
     public String getNom() {
         return nom;
     }
 
-    public void setNom(String name) {
-        this.nom = name;
-    }
 
-    public long getVille_id() {
-        return ville_id;
-    }
-
-    public void setVille_id(int ville_id) {
-        this.ville_id = ville_id;
-    }
-
-    public Ville getVille() {
-        return ville;
-    }
-
-    public void setVille(Ville ville) {
-        this.ville = ville;
+    public void setNom(String nom) {
+        this.nom = nom;
     }
 }

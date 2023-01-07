@@ -1,68 +1,75 @@
 package com.project.retrofit.model;
 
-import java.util.Date;
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
 
 public class Restaurant {
 
-    private Long id;
-    private String nom;
+    @SerializedName("id")
+    @Expose
+    private int id;
+
+    @SerializedName("adresse")
+    @Expose
     private String adresse;
+
+    @SerializedName("heure_close")
+    @Expose
+    private String heure_close;
+
+
+    @SerializedName("heure_open")
+    @Expose
+    private String heure_open;
+
+    @SerializedName("latitude")
+    @Expose
     private double latitude;
+
+    @SerializedName("longitude")
+    @Expose
     private double longitude;
+
+    @SerializedName("nom")
+    @Expose
+    private String nom;
+
+    @SerializedName("rank")
+    @Expose
     private String rank;
 
+    @SerializedName("serie_id")
+    @Expose
+    private int serie_id;
 
-    private String heureOpen;
-    private String heureClose;
+    @SerializedName("zone_id")
+    @Expose
+    private int zone_id;
 
 
 
-    //Serie
+    public Restaurant() {
+    }
 
-
-    private Serie serie;
-
-    private Zone zone;
-
-    public Restaurant(Long id, String nom, String adresse, double latitude, double longitude, String rank, String heureOpen, String heureClose, Serie serie, Zone zone) {
+    public Restaurant(int id, String adresse, String heure_close, String heure_open, double latitude, double longitude, String nom, String rank, int serie_id, int zone_id) {
         this.id = id;
-        this.nom = nom;
         this.adresse = adresse;
+        this.heure_close = heure_close;
+        this.heure_open = heure_open;
         this.latitude = latitude;
         this.longitude = longitude;
-        this.rank = rank;
-        this.heureOpen = heureOpen;
-        this.heureClose = heureClose;
-        this.serie = serie;
-        this.zone = zone;
-    }
-
-    public Restaurant(String nom, String adresse, double latitude, double longitude, String rank, String heureOpen, String heureClose, Serie serie, Zone zone) {
         this.nom = nom;
-        this.adresse = adresse;
-        this.latitude = latitude;
-        this.longitude = longitude;
         this.rank = rank;
-        this.heureOpen = heureOpen;
-        this.heureClose = heureClose;
-        this.serie = serie;
-        this.zone = zone;
+        this.serie_id = serie_id;
+        this.zone_id = zone_id;
     }
 
-    public Long getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(int id) {
         this.id = id;
-    }
-
-    public String getNom() {
-        return nom;
-    }
-
-    public void setNom(String nom) {
-        this.nom = nom;
     }
 
     public String getAdresse() {
@@ -73,20 +80,36 @@ public class Restaurant {
         this.adresse = adresse;
     }
 
-    public double getLatitude() {
-        return latitude;
+    public String getHeure_close() {
+        return heure_close;
     }
 
-    public void setLatitude(double latitude) {
-        this.latitude = latitude;
+    public void setHeure_close(String heure_close) {
+        this.heure_close = heure_close;
+    }
+
+    public String getHeure_open() {
+        return heure_open;
+    }
+
+    public void setHeure_open(String heure_open) {
+        this.heure_open = heure_open;
+    }
+
+    public double getLatitude() {
+        return latitude;
     }
 
     public double getLongitude() {
         return longitude;
     }
 
-    public void setLongitude(double longitude) {
-        this.longitude = longitude;
+    public String getNom() {
+        return nom;
+    }
+
+    public void setNom(String nom) {
+        this.nom = nom;
     }
 
     public String getRank() {
@@ -97,35 +120,27 @@ public class Restaurant {
         this.rank = rank;
     }
 
-    public String getHeureOpen() {
-        return heureOpen;
+    public void setLatitude(double latitude) {
+        this.latitude = latitude;
     }
 
-    public void setHeureOpen(String heureOpen) {
-        this.heureOpen = heureOpen;
+    public void setLongitude(double longitude) {
+        this.longitude = longitude;
     }
 
-    public String getHeureClose() {
-        return heureClose;
+    public int getSerie_id() {
+        return serie_id;
     }
 
-    public void setHeureClose(String heureClose) {
-        this.heureClose = heureClose;
+    public void setSerie_id(int serie_id) {
+        this.serie_id = serie_id;
     }
 
-    public Serie getSerie() {
-        return serie;
+    public int getZone_id() {
+        return zone_id;
     }
 
-    public void setSerie(Serie serie) {
-        this.serie = serie;
-    }
-
-    public Zone getZone() {
-        return zone;
-    }
-
-    public void setZone(Zone zone) {
-        this.zone = zone;
+    public void setZone_id(int zone_id) {
+        this.zone_id = zone_id;
     }
 }
